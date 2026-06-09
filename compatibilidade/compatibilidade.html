@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Tech - Checar Compatibilidade</title>
+    <style>
+        /* Aplicando as cores exatas do Figma do grupo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Fundo escuro do Figma */
+            color: #F8FAFC; /* Texto claro do Figma */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Menu superior baseado na imagem do Figma */
+        header {
+            background-color: #3B82F6; /* Azul do Figma */
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #F8FAFC;
+            text-transform: uppercase;
+        }
+
+        header nav a {
+            color: #F8FAFC;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-principal span {
+            color: #3B82F6; /* Destacando com o azul do grupo */
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+        }
+
+        /* Blocos de conteúdo explicativo */
+        .card-compatibilidade {
+            background-color: #2A2A2A; /* Cinza escuro dos blocos do Figma */
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid #F44732; /* Detalhe com o Vermelho/Laranja do grupo */
+        }
+
+        .card-compatibilidade h3 {
+            color: #F44732; /* Vermelho/Laranja para títulos internos */
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .card-compatibilidade p {
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .badge-alerta {
+            background-color: rgba(244, 71, 50, 0.2);
+            color: #F44732;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Rodapé igual ao das outras páginas */
+        footer {
+            background-color: #2A2A2A;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Superior idêntico ao padrão estruturado pelo grupo no Figma -->
+    <header>
+        <div class="logo">HT Hybrid Tech</div>
+        <nav>
+            <a href="index.html">Hardware</a>
+            <a href="#">Comparar componentes</a>
+            <a href="compatibilidade.html" style="border-bottom: 2px solid white; padding-bottom: 5px;">Checar compatibilidade</a>
+            <a href="#">Montar meu PC</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo-principal">Checar <span>Compatibilidade</span></div>
+        <p class="subtitulo">Aprenda de forma simples a verificar se as peças do seu computador são compatíveis antes de comprar.</p>
+
+        <!-- Seção 1 -->
+        <div class="card-compatibilidade">
+            <h3>Placa-Mãe vs Processador (O Soquete)</h3>
+            <p>O processador é o cérebro do PC, e a placa-mãe é o corpo. Eles precisam se conectar perfeitamente através de um encaixe chamado <strong>Soquete</strong>.</p>
+            <p><strong>Dica Hybrid Tech:</strong> Processadores Intel e AMD usam formatos físicos totalmente diferentes. Se você comprar uma placa-mãe com soquete AM4 (da AMD), um processador Intel não vai encaixar fisicamente de forma alguma.</p>
+        </div>
+
+        <!-- Seção 2 -->
+        <div class="card-compatibilidade">
+            <h3>Memória RAM (Gerações DDR4 e DDR5)</h3>
+            <p>As memórias RAM possuem uma pequena divisão física na parte dos conectores dourados, e essa divisão muda de lugar a cada geração.</p>
+            <p><strong>Dica Hybrid Tech:</strong> Placas-mãe mais antigas aceitam apenas DDR4. Placas mais novas aceitam DDR5. Elas não são intercambiáveis: uma memória DDR5 não entra em um slot DDR4.</p>
+            <div class="badge-alerta">⚠️ Verifique sempre a especificação técnica da placa-mãe antes de fechar o carrinho!</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sobre nós | Políticas de Privacidade</p>
+        <p style="margin-top: 10px;">&copy; Copyright Todos os direitos reservados 2026 - Desenvolvido por Kauã Batista</p>
+    </footer>
+
+</body>
+</html>
