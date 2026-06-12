@@ -1,0 +1,419 @@
+.comparacao{
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.comparacao h1{
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo{
+    color: #e7e7e7;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.passos{
+    background: #252525;
+
+    border-radius: 25px;
+
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.passo{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.passo span{
+    width: 2.3rem;
+    height: 2.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: #ffffff;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.passo h3{
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+
+    text-align: left;
+}
+
+.passo p{
+    color: #e0e0e0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.passo.ativo span{
+    background: #ff5438;
+}
+
+
+
+.comparador{
+    width: 95%;
+    margin: 4rem auto;
+}
+
+/* TOPO */
+
+.cabecalho-comparacao{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #1f1f1f;
+
+    border-radius: 25px 25px 0 0;
+
+    overflow: hidden;
+}
+
+.card-adicionar,
+.produto,
+.slot-vazio{
+    padding: 1.5rem;
+
+    min-height: 320px;
+
+    border-right: 2px solid #000;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+}
+
+.produto img{
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+.produto h3{
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.preco-antigo{
+    color: #ff5538;
+    text-decoration: line-through;
+}
+
+.preco{
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.produto button{
+    margin-top: auto;
+
+    background: #000;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: .8rem;
+
+    cursor: pointer;
+}
+
+.card-adicionar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    color: #ffffff;
+}
+
+.card-adicionar p{
+    margin-top: 1rem;
+    margin-left: -.5rem;
+
+    text-align: center;
+    font-size: 1.1rem;}
+
+.mais{
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+/* TABELA */
+
+.tabela-comparacao{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #181818;
+
+    border-radius: 0 0 25px 25px;
+
+    overflow: hidden;
+}
+
+.especificacoes,
+.coluna-produto,
+.coluna-vazia{
+    padding: 2rem;
+
+    border-right: 2px solid #000;
+}
+
+.especificacoes h2{
+    color: #ff5538;
+    margin-bottom: 2rem;
+}
+
+.especificacoes p,
+.coluna-produto p{
+    color: #ffffff;
+
+    padding: 1rem 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.coluna-produto{
+    text-align: center;
+}
+
+.coluna-produto h3{
+    color: #ff5438;
+    margin: 1rem;
+}
+
+.espaco-vazio{
+    height: 3.9rem;
+}
+
+
+.resultado-comparacao{
+    width: 95%;
+    margin: 4rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+.resultado-card{
+    background: #2A2A2A;
+
+    border-radius: .6rem;
+
+    padding: 2rem;
+}
+
+.resultado-card h2{
+    color: #ff5438;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 2rem;
+}
+
+.resultado-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.resultado-conteudo p{
+    color: #ffffff;
+
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    max-width: 60%;
+}
+
+.resultado-conteudo img{
+    width: 180px;
+    height: auto;
+}
+
+.resultado-vencedores h3{
+    color: #ff5438;
+
+    font-size: 1.4rem;
+
+    margin-top: 1rem;
+}
+
+.resultado-vencedores p{
+    color: #ffffff;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1rem;
+}
+
+
+
+/* responsividade */
+
+@media (max-width: 768px){
+
+    .comparacao h1{
+        font-size: 2.5rem;
+    }
+
+    .subtitulo{
+        font-size: 1rem;
+    }
+
+    .passos{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .passo{
+        width: 100%;
+    }
+
+
+
+    .comparador{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* área rolável */
+
+    .comparador-scroll{
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+
+    .cabecalho-comparacao,
+    .tabela-comparacao{
+        min-width: 900px;
+    }
+
+    /* cards menores */
+
+    .produto img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .produto h3{
+        font-size: .9rem;
+    }
+
+    .preco{
+        font-size: 1.4rem;
+    }
+
+    .produto button{
+        
+        font-size: .9rem;
+    }
+
+    /* coluna de specs */
+
+    .especificacoes h2{
+        font-size: 1.2rem;
+    }
+
+    .especificacoes p,
+    .coluna-produto p{
+        font-size: .9rem;
+        padding: .8rem 0;
+    }
+
+    .mais{
+        width: 55px;
+        height: 55px;
+
+        font-size: 2rem;
+    }
+
+.espaco-vazio{
+    height: 3.5rem;
+}
+
+
+
+.resultado-comparacao{
+    grid-template-columns: 1fr;
+}
+
+.resultado-card h2{
+    font-size: 1.8rem;
+}
+
+.resultado-conteudo{
+    flex-direction: column;
+    text-align: center;
+}
+
+.resultado-conteudo p{
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+.resultado-conteudo img{
+    width: 120px;
+}
+
+.resultado-vencedores h3{
+    font-size: 1.4rem;
+}
+
+.resultado-vencedores p{
+    font-size: 1rem;
+}
+
+}
