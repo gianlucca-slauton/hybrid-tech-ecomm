@@ -17,7 +17,7 @@
 
     display: flex;
 
-    background-color: rgba(244, 69, 50, 0.75);
+    background-color: rgba(244, 69, 50, .85);
 
     position: fixed
 }
@@ -90,7 +90,7 @@
 
 .menu nav a:hover{
 
-    color: #c21300;
+    color: #d8301d;
 
     transition-duration: .3s;
 }

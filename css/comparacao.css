@@ -1,3 +1,11 @@
+.menu nav a:hover{
+
+    color: #3B82F6;
+
+    transition-duration: .3s;
+}
+
+
 .comparacao{
     width: 90%;
     margin: 5rem auto;
