@@ -1,0 +1,176 @@
+.produtos{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.produtos h2{
+    color: #161616;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* GRID */
+
+.grid-produtos{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 1rem;
+}
+
+/* CARD */
+
+.card-produto{
+    background: #f3f3f3;
+
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s;
+}
+
+.card-produto:hover{
+    transform: translateY(-5px);
+}
+
+.card-produto img{
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin-bottom: 1rem;
+}
+
+.card-produto h3{
+    color: #2a2a2a;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    margin-bottom: .5rem;
+
+    min-height: 4rem;
+}
+
+.preco-antigo{
+    color: #F44732;
+
+    text-decoration: line-through;
+
+    font-size: .9rem;
+
+    margin-bottom: .3rem;
+}
+
+.preco{
+    color: #161616;
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.saiba-mais{
+    color: #161616;
+
+    text-align: center;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1rem;
+
+    transition-duration: .3s;
+}
+
+.saiba-mais:hover{
+    color: #3B82F6;
+
+    transition-duration: .3s;
+}
+
+.card-produto button{
+    margin-top: auto;
+
+    background: #F44732;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: .8rem;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.card-produto button:hover{
+    background: #3B82F6;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px){
+
+    .produtos{
+        width: 95%;
+    }
+
+    .produtos h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .grid-produtos{
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: .6rem;
+    }
+
+    .card-produto{
+        padding: .6rem;
+    }
+
+    .card-produto img{
+        height: 80px;
+    }
+
+    .card-produto h3{
+        font-size: .9rem;
+        min-height: auto;
+    }
+
+    .preco-antigo{
+        font-size: .75rem;
+    }
+
+    .preco{
+        font-size: 1.4rem;
+    }
+
+    .saiba-mais{
+        font-size: .75rem;
+        margin-bottom: .5rem;
+    }
+
+    .card-produto button{
+        font-size: .72rem;
+        padding: .45rem;
+    }
+}
+
+.card-produto p{
+    opacity: 0;
+}
