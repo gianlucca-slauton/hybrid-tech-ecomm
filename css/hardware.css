@@ -169,8 +169,17 @@
         font-size: .72rem;
         padding: .45rem;
     }
+<<<<<<< HEAD
 }
 
 .card-produto p{
     opacity: 0;
 }
+=======
+
+    .espaco-vazio-produto{
+        height: 1.3rem;
+    }
+}
+
+>>>>>>> 9cf73a89e84d3e05e69ee406f64fda87a70fd334
